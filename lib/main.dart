@@ -153,7 +153,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(title: 'Online Education'),
+      home: HomePage(title: 'Online Education WCC'),
       routes: {
         // Navigare to Grades Page
         'grades': (context) => GradesPage(),
