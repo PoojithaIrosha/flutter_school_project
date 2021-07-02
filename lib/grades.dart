@@ -267,7 +267,9 @@ class _GradesPageState extends State<GradesPage> {
                               margin: EdgeInsets.all(5),
                               width: 200,
                               child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.pushNamed(context, 'subjects/9a');
+                                  },
                                   child: Text("Grade 9-A",
                                       style: TextStyle(
                                           fontSize: 25,
@@ -279,7 +281,9 @@ class _GradesPageState extends State<GradesPage> {
                               margin: EdgeInsets.all(5),
                               width: 200,
                               child: ElevatedButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, 'subjects/9b');
+                                },
                                 child: Text("Grade 9-B",
                                     style: TextStyle(
                                         fontSize: 25,
@@ -292,7 +296,9 @@ class _GradesPageState extends State<GradesPage> {
                               margin: EdgeInsets.all(5),
                               width: 200,
                               child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.pushNamed(context, 'subjects/9c');
+                                  },
                                   child: Text("Grade 9-C",
                                       style: TextStyle(
                                           fontSize: 25,

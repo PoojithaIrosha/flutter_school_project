@@ -14,8 +14,8 @@ class _TeacherPanelLoginState extends State<TeacherPanelLogin> {
   late String pass;
   late String user;
 
-  String password = '';
-  String username = '';
+  late String password;
+  late String username;
 
   void getLink() async {
     DocumentSnapshot variable = await FirebaseFirestore.instance
