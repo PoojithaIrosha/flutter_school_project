@@ -20,7 +20,8 @@ class _DataInputPageState extends State<DataInputPage> {
     'grade9',
     'grade10',
     'grade11',
-    'grade12'
+    'grade12',
+    'grade13'
   ];
   String gradeSelected = "Select the grade";
 
@@ -213,6 +214,10 @@ class _DataInputPageState extends State<DataInputPage> {
                                   'english',
                                   'buddhism',
                                   'history',
+                                  'art',
+                                  'music',
+                                  'drama',
+                                  'dancing'
                                 ];
                               });
                             } else if (gradeSelected == 'grade5') {

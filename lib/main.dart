@@ -8,6 +8,29 @@ import 'package:flutter_school_project/links/grade_6/6a/buddhism_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/english_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/maths_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/science_link_6a.dart';
+import 'package:flutter_school_project/subjects/grade_10/aesthetic_subjects_grade10.dart';
+import 'links/grade_10/10a/buddhism_link_10a.dart';
+import 'links/grade_10/10a/english_link_10a.dart';
+import 'links/grade_10/10a/history_link_10a.dart';
+import 'links/grade_10/10a/maths_link_10a.dart';
+import 'links/grade_10/10a/science_link_10a.dart';
+import 'links/grade_10/10a/sinhala_link_10a.dart';
+import 'links/grade_10/10b/buddhism_link_10b.dart';
+import 'links/grade_10/10b/english_link_10b.dart';
+import 'links/grade_10/10b/history_link_10b.dart';
+import 'links/grade_10/10b/maths_link_10b.dart';
+import 'links/grade_10/10b/science_link_10b.dart';
+import 'links/grade_10/10b/sinhala_link_10b.dart';
+import 'links/grade_10/10c/buddhism_link_10c.dart';
+import 'links/grade_10/10c/english_link_10c.dart';
+import 'links/grade_10/10c/history_link_10c.dart';
+import 'links/grade_10/10c/maths_link_10c.dart';
+import 'links/grade_10/10c/science_link_10c.dart';
+import 'links/grade_10/10c/sinhala_link_10c.dart';
+import 'links/grade_10/aesthetic_subjects/art_link_10.dart';
+import 'links/grade_10/aesthetic_subjects/dancing_link_10.dart';
+import 'links/grade_10/aesthetic_subjects/drama_link_10.dart';
+import 'links/grade_10/aesthetic_subjects/music_link_10.dart';
 import 'links/grade_6/6a/civic_link_6a.dart';
 import 'links/grade_6/6a/geo_link_6a.dart';
 import 'links/grade_6/6a/health_link_6a.dart';
@@ -152,6 +175,9 @@ import 'links/grade_9/aesthetic_subjects/art_link_9.dart';
 import 'links/grade_9/aesthetic_subjects/dancing_link_9.dart';
 import 'links/grade_9/aesthetic_subjects/drama_link_9.dart';
 import 'links/grade_9/aesthetic_subjects/music_link_9.dart';
+import 'subjects/grade_10/subjects_10a.dart';
+import 'subjects/grade_10/subjects_10b.dart';
+import 'subjects/grade_10/subjects_10c.dart';
 import 'subjects/grade_6/aesthetic_subjects_grade6.dart';
 import 'subjects/grade_6/subjects_6a.dart';
 import 'subjects/grade_6/subjects_6b.dart';
@@ -404,6 +430,42 @@ class MyApp extends StatelessWidget {
         'subjects/9/music': (context) => MusicLink9(),
         'subjects/9/dancing': (context) => DancingLink9(),
         'subjects/9/drama': (context) => DramaLink9(),
+
+        // Navigate to 10 ABC
+        'subjects/10a': (context) => Grade10ASubjects(),
+        'subjects/10b': (context) => Grade10BSubjects(),
+        'subjects/10c': (context) => Grade10CSubjects(),
+
+        // Grade 10A Subjects
+        'subjects/10a/maths': (context) => MathsLink10a(),
+        'subjects/10a/science': (context) => ScienceLink10a(),
+        'subjects/10a/english': (context) => EnglishLink10a(),
+        'subjects/10a/sinhala': (context) => SinhalaLink10a(),
+        'subjects/10a/buddhism': (context) => BuddhismLink10a(),
+        'subjects/10a/history': (context) => HistoryLink10a(),
+
+        // Grade 10B Subjects
+        'subjects/10b/science': (context) => ScienceLink10b(),
+        'subjects/10b/maths': (context) => MathsLink10b(),
+        'subjects/10b/english': (context) => EnglishLink10b(),
+        'subjects/10b/sinhala': (context) => SinhalaLink10b(),
+        'subjects/10b/buddhism': (context) => BuddhismLink10b(),
+        'subjects/10b/history': (context) => HistoryLink10b(),
+
+        // Grade 10C Subjects
+        'subjects/10c/maths': (context) => MathsLink10c(),
+        'subjects/10c/science': (context) => ScienceLink10c(),
+        'subjects/10c/english': (context) => EnglishLink10c(),
+        'subjects/10c/sinhala': (context) => SinhalaLink10c(),
+        'subjects/10c/buddhism': (context) => BuddhismLink10c(),
+        'subjects/10c/history': (context) => HistoryLink10c(),
+
+        // Grade 10 Aesthetics
+        'subjects/10/aesthetics': (context) => Grade10AestheticSubjects(),
+        'subjects/10/art': (context) => ArtLink10(),
+        'subjects/10/music': (context) => MusicLink10(),
+        'subjects/10/dancing': (context) => DancingLink10(),
+        'subjects/10/drama': (context) => DramaLink10(),
       },
     );
   }
