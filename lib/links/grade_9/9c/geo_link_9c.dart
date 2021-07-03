@@ -80,30 +80,20 @@ class _GeoLink9cState extends State<GeoLink9c> {
                       height: 300,
                       child: Lottie.asset("assets/study.json")),
                   Padding(
-                    padding:
-                        const EdgeInsets.only(bottom: 30, left: 20, right: 20),
-                    child: Text(
-                      // Change Here
-                      "You have class on every Wednesday from 6.00AM to 7.30AM",
-                      style: TextStyle(
-                          fontSize: 25,
-                          fontFamily: 'Caveat',
-                          fontWeight: FontWeight.w700),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 200,
-                    height: 50,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(elevation: 3),
-                      onPressed: () {
-                        launch(finalLink);
-                      },
-                      child: Text(
-                        "Zoom Link",
-                        style: TextStyle(fontSize: 20),
-                        textAlign: TextAlign.center,
+                    padding: const EdgeInsets.only(top: 40.0),
+                    child: SizedBox(
+                      width: 200,
+                      height: 50,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(elevation: 3),
+                        onPressed: () {
+                          launch(finalLink);
+                        },
+                        child: Text(
+                          "Zoom Link",
+                          style: TextStyle(fontSize: 20),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                     ),
                   ),
