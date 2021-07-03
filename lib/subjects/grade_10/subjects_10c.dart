@@ -21,7 +21,7 @@ class Grade10CSubjects extends StatelessWidget {
                       height: 70,
                       child: ElevatedButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, 'subjects/10a/maths');
+                            Navigator.pushNamed(context, 'subjects/10c/maths');
                           },
                           child: Text("Maths",
                               style: TextStyle(
@@ -34,7 +34,7 @@ class Grade10CSubjects extends StatelessWidget {
                       child: ElevatedButton(
                           onPressed: () {
                             Navigator.pushNamed(
-                                context, 'subjects/10a/science');
+                                context, 'subjects/10c/science');
                           },
                           child: Text("Science",
                               style: TextStyle(
@@ -47,7 +47,7 @@ class Grade10CSubjects extends StatelessWidget {
                       child: ElevatedButton(
                           onPressed: () {
                             Navigator.pushNamed(
-                                context, 'subjects/10a/sinhala');
+                                context, 'subjects/10c/sinhala');
                           },
                           child: Text("Sinhala",
                               style: TextStyle(
@@ -60,7 +60,7 @@ class Grade10CSubjects extends StatelessWidget {
                       child: ElevatedButton(
                           onPressed: () {
                             Navigator.pushNamed(
-                                context, 'subjects/10a/english');
+                                context, 'subjects/10c/english');
                           },
                           child: Text("English",
                               style: TextStyle(
@@ -73,7 +73,7 @@ class Grade10CSubjects extends StatelessWidget {
                       child: ElevatedButton(
                           onPressed: () {
                             Navigator.pushNamed(
-                                context, 'subjects/10a/buddhism');
+                                context, 'subjects/10c/buddhism');
                           },
                           child: Text("Buddhism",
                               style: TextStyle(
@@ -86,7 +86,7 @@ class Grade10CSubjects extends StatelessWidget {
                       child: ElevatedButton(
                           onPressed: () {
                             Navigator.pushNamed(
-                                context, 'subjects/10a/history');
+                                context, 'subjects/10c/history');
                           },
                           child: Text("History",
                               style: TextStyle(

@@ -413,7 +413,10 @@ class _GradesPageState extends State<GradesPage> {
                                 margin: EdgeInsets.all(5),
                                 width: 200,
                                 child: ElevatedButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(
+                                          context, 'subjects/11a');
+                                    },
                                     child: Text("Grade 11-A",
                                         style: TextStyle(
                                             fontSize: 25,
@@ -425,7 +428,10 @@ class _GradesPageState extends State<GradesPage> {
                                 margin: EdgeInsets.all(5),
                                 width: 200,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.pushNamed(
+                                        context, 'subjects/11b');
+                                  },
                                   child: Text("Grade 11-B",
                                       style: TextStyle(
                                           fontSize: 25,
@@ -438,7 +444,10 @@ class _GradesPageState extends State<GradesPage> {
                                 margin: EdgeInsets.all(5),
                                 width: 200,
                                 child: ElevatedButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(
+                                          context, 'subjects/11c');
+                                    },
                                     child: Text("Grade 11-C",
                                         style: TextStyle(
                                             fontSize: 25,

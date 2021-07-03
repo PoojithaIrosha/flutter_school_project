@@ -9,6 +9,10 @@ import 'package:flutter_school_project/links/grade_6/6a/english_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/maths_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/science_link_6a.dart';
 import 'package:flutter_school_project/subjects/grade_10/aesthetic_subjects_grade10.dart';
+import 'package:flutter_school_project/subjects/grade_11/aesthetic_subjects_grade11.dart';
+import 'package:flutter_school_project/subjects/grade_11/subjects_11a.dart';
+import 'package:flutter_school_project/subjects/grade_11/subjects_11b.dart';
+import 'package:flutter_school_project/subjects/grade_11/subjects_11c.dart';
 import 'links/grade_10/10a/buddhism_link_10a.dart';
 import 'links/grade_10/10a/english_link_10a.dart';
 import 'links/grade_10/10a/history_link_10a.dart';
@@ -31,6 +35,28 @@ import 'links/grade_10/aesthetic_subjects/art_link_10.dart';
 import 'links/grade_10/aesthetic_subjects/dancing_link_10.dart';
 import 'links/grade_10/aesthetic_subjects/drama_link_10.dart';
 import 'links/grade_10/aesthetic_subjects/music_link_10.dart';
+import 'links/grade_11/11a/buddhism_link_11a.dart';
+import 'links/grade_11/11a/english_link_11a.dart';
+import 'links/grade_11/11a/history_link_11a.dart';
+import 'links/grade_11/11a/maths_link_11a.dart';
+import 'links/grade_11/11a/science_link_11a.dart';
+import 'links/grade_11/11a/sinhala_link_11a.dart';
+import 'links/grade_11/11b/buddhism_link_11b.dart';
+import 'links/grade_11/11b/english_link_11b.dart';
+import 'links/grade_11/11b/history_link_11b.dart';
+import 'links/grade_11/11b/maths_link_11b.dart';
+import 'links/grade_11/11b/science_link_11b.dart';
+import 'links/grade_11/11b/sinhala_link_11b.dart';
+import 'links/grade_11/11c/buddhism_link_11c.dart';
+import 'links/grade_11/11c/english_link_11c.dart';
+import 'links/grade_11/11c/history_link_11c.dart';
+import 'links/grade_11/11c/maths_link_11c.dart';
+import 'links/grade_11/11c/science_link_11c.dart';
+import 'links/grade_11/11c/sinhala_link_11c.dart';
+import 'links/grade_11/aesthetic_subjects/art_link_11.dart';
+import 'links/grade_11/aesthetic_subjects/dancing_link_11.dart';
+import 'links/grade_11/aesthetic_subjects/drama_link_11.dart';
+import 'links/grade_11/aesthetic_subjects/music_link_11.dart';
 import 'links/grade_6/6a/civic_link_6a.dart';
 import 'links/grade_6/6a/geo_link_6a.dart';
 import 'links/grade_6/6a/health_link_6a.dart';
@@ -466,6 +492,42 @@ class MyApp extends StatelessWidget {
         'subjects/10/music': (context) => MusicLink10(),
         'subjects/10/dancing': (context) => DancingLink10(),
         'subjects/10/drama': (context) => DramaLink10(),
+
+        // Navigate to 11 ABC
+        'subjects/11a': (context) => Grade11ASubjects(),
+        'subjects/11b': (context) => Grade11BSubjects(),
+        'subjects/11c': (context) => Grade11CSubjects(),
+
+        // Grade 11A Subjects
+        'subjects/11a/maths': (context) => MathsLink11a(),
+        'subjects/11a/science': (context) => ScienceLink11a(),
+        'subjects/11a/english': (context) => EnglishLink11a(),
+        'subjects/11a/sinhala': (context) => SinhalaLink11a(),
+        'subjects/11a/buddhism': (context) => BuddhismLink11a(),
+        'subjects/11a/history': (context) => HistoryLink11a(),
+
+        // Grade 11B Subjects
+        'subjects/11b/science': (context) => ScienceLink11b(),
+        'subjects/11b/maths': (context) => MathsLink11b(),
+        'subjects/11b/english': (context) => EnglishLink11b(),
+        'subjects/11b/sinhala': (context) => SinhalaLink11b(),
+        'subjects/11b/buddhism': (context) => BuddhismLink11b(),
+        'subjects/11b/history': (context) => HistoryLink11b(),
+
+        // Grade 11C Subjects
+        'subjects/11c/maths': (context) => MathsLink11c(),
+        'subjects/11c/science': (context) => ScienceLink11c(),
+        'subjects/11c/english': (context) => EnglishLink11c(),
+        'subjects/11c/sinhala': (context) => SinhalaLink11c(),
+        'subjects/11c/buddhism': (context) => BuddhismLink11c(),
+        'subjects/11c/history': (context) => HistoryLink11c(),
+
+        // Grade 11 Aesthetics
+        'subjects/11/aesthetics': (context) => Grade11AestheticSubjects(),
+        'subjects/11/art': (context) => ArtLink11(),
+        'subjects/11/music': (context) => MusicLink11(),
+        'subjects/11/dancing': (context) => DancingLink11(),
+        'subjects/11/drama': (context) => DramaLink11(),
       },
     );
   }
