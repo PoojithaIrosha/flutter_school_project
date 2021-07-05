@@ -7,8 +7,8 @@ import 'package:lottie/lottie.dart';
 final passwordController = TextEditingController();
 bool isPasswordVisible = true;
 
-Widget gradeLoginPage(
-    String password, context, Widget buildPassword, String className) {
+Widget gradeLoginPage(String password, context, Widget buildPassword,
+    String className, String class_teacher) {
   return Scaffold(
     body: Center(
       child: ListView(
@@ -26,6 +26,28 @@ Widget gradeLoginPage(
             child: Text(
               "Log Into Your Class",
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            ),
+          )),
+          Center(
+              child: Padding(
+            padding: const EdgeInsets.only(bottom: 1),
+            child: Text(
+              "Grade: ${className.toUpperCase()}",
+              style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'Caveat',
+                  fontWeight: FontWeight.w900),
+            ),
+          )),
+          Center(
+              child: Padding(
+            padding: const EdgeInsets.only(bottom: 20),
+            child: Text(
+              "Class Teacher: $class_teacher",
+              style: TextStyle(
+                  fontSize: 20,
+                  fontFamily: 'Caveat',
+                  fontWeight: FontWeight.w700),
             ),
           )),
           buildPassword,

@@ -4,29 +4,35 @@ import 'package:flutter/material.dart';
 import 'package:flutter_school_project/grades.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter_school_project/home.dart';
+import 'package:flutter_school_project/links/grade_10/group1_subjects/commerce_link_10.dart';
 import 'package:flutter_school_project/links/grade_6/6a/6a_login.dart';
 import 'package:flutter_school_project/links/grade_6/6a/buddhism_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/english_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/maths_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/science_link_6a.dart';
 import 'package:flutter_school_project/subjects/grade_10/aesthetic_subjects_grade10.dart';
+import 'package:flutter_school_project/subjects/grade_10/group1_subjects_grade10.dart';
+import 'package:flutter_school_project/subjects/grade_10/group2_subjects_grade10.dart';
 import 'package:flutter_school_project/subjects/grade_11/aesthetic_subjects_grade11.dart';
 import 'package:flutter_school_project/subjects/grade_11/subjects_11a.dart';
 import 'package:flutter_school_project/subjects/grade_11/subjects_11b.dart';
 import 'package:flutter_school_project/subjects/grade_11/subjects_11c.dart';
 import 'package:flutter_school_project/timetable.dart';
+import 'links/grade_10/10a/10a_login.dart';
 import 'links/grade_10/10a/buddhism_link_10a.dart';
 import 'links/grade_10/10a/english_link_10a.dart';
 import 'links/grade_10/10a/history_link_10a.dart';
 import 'links/grade_10/10a/maths_link_10a.dart';
 import 'links/grade_10/10a/science_link_10a.dart';
 import 'links/grade_10/10a/sinhala_link_10a.dart';
+import 'links/grade_10/10b/10b_login.dart';
 import 'links/grade_10/10b/buddhism_link_10b.dart';
 import 'links/grade_10/10b/english_link_10b.dart';
 import 'links/grade_10/10b/history_link_10b.dart';
 import 'links/grade_10/10b/maths_link_10b.dart';
 import 'links/grade_10/10b/science_link_10b.dart';
 import 'links/grade_10/10b/sinhala_link_10b.dart';
+import 'links/grade_10/10c/10c_login.dart';
 import 'links/grade_10/10c/buddhism_link_10c.dart';
 import 'links/grade_10/10c/english_link_10c.dart';
 import 'links/grade_10/10c/history_link_10c.dart';
@@ -37,6 +43,13 @@ import 'links/grade_10/aesthetic_subjects/art_link_10.dart';
 import 'links/grade_10/aesthetic_subjects/dancing_link_10.dart';
 import 'links/grade_10/aesthetic_subjects/drama_link_10.dart';
 import 'links/grade_10/aesthetic_subjects/music_link_10.dart';
+import 'links/grade_10/group1_subjects/civic_link_10.dart';
+import 'links/grade_10/group1_subjects/geo_link_10.dart';
+import 'links/grade_10/group1_subjects/tamil_link_10.dart';
+import 'links/grade_10/groupII_subjects/electronics_link_10.dart';
+import 'links/grade_10/groupII_subjects/health_link_10.dart';
+import 'links/grade_10/groupII_subjects/hscience_link_10.dart';
+import 'links/grade_10/groupII_subjects/ict_link_10.dart';
 import 'links/grade_11/11a/buddhism_link_11a.dart';
 import 'links/grade_11/11a/english_link_11a.dart';
 import 'links/grade_11/11a/history_link_11a.dart';
@@ -94,6 +107,7 @@ import 'links/grade_6/aesthetic_subjects/art_link_6.dart';
 import 'links/grade_6/aesthetic_subjects/dancing_link_6.dart';
 import 'links/grade_6/aesthetic_subjects/drama_link_6.dart';
 import 'links/grade_6/aesthetic_subjects/music_link_6.dart';
+import 'links/grade_7/7a/7a_login.dart';
 import 'links/grade_7/7a/buddhism_link_7a.dart';
 import 'links/grade_7/7a/civic_link_7a.dart';
 import 'links/grade_7/7a/english_link_7a.dart';
@@ -105,6 +119,7 @@ import 'links/grade_7/7a/pts_link_7a.dart';
 import 'links/grade_7/7a/science_link_7a.dart';
 import 'links/grade_7/7a/sinhala_link_7a.dart';
 import 'links/grade_7/7a/tamil_link_7a.dart';
+import 'links/grade_7/7b/7b_login.dart';
 import 'links/grade_7/7b/buddhism_link_7b.dart';
 import 'links/grade_7/7b/civic_link_7b.dart';
 import 'links/grade_7/7b/english_link_7b.dart';
@@ -116,6 +131,7 @@ import 'links/grade_7/7b/pts_link_7b.dart';
 import 'links/grade_7/7b/science_link_7b.dart';
 import 'links/grade_7/7b/sinhala_link_7b.dart';
 import 'links/grade_7/7b/tamil_link_7b.dart';
+import 'links/grade_7/7c/7c_login.dart';
 import 'links/grade_7/7c/buddhism_link_7c.dart';
 import 'links/grade_7/7c/civic_link_7c.dart';
 import 'links/grade_7/7c/english_link_7c.dart';
@@ -131,6 +147,7 @@ import 'links/grade_7/aesthetic_subjects/art_link_7.dart';
 import 'links/grade_7/aesthetic_subjects/dancing_link_7.dart';
 import 'links/grade_7/aesthetic_subjects/drama_link_7.dart';
 import 'links/grade_7/aesthetic_subjects/music_link_7.dart';
+import 'links/grade_8/8a/8a_login.dart';
 import 'links/grade_8/8a/buddhism_link_8a.dart';
 import 'links/grade_8/8a/civic_link_8a.dart';
 import 'links/grade_8/8a/english_link_8a.dart';
@@ -142,6 +159,7 @@ import 'links/grade_8/8a/pts_link_8a.dart';
 import 'links/grade_8/8a/science_link_8a.dart';
 import 'links/grade_8/8a/sinhala_link_8a.dart';
 import 'links/grade_8/8a/tamil_link_8a.dart';
+import 'links/grade_8/8b/8b_login.dart';
 import 'links/grade_8/8b/buddhism_link_8b.dart';
 import 'links/grade_8/8b/civic_link_8b.dart';
 import 'links/grade_8/8b/english_link_8b.dart';
@@ -153,6 +171,7 @@ import 'links/grade_8/8b/pts_link_8b.dart';
 import 'links/grade_8/8b/science_link_8b.dart';
 import 'links/grade_8/8b/sinhala_link_8b.dart';
 import 'links/grade_8/8b/tamil_link_8b.dart';
+import 'links/grade_8/8c/8c_login.dart';
 import 'links/grade_8/8c/buddhism_link_8c.dart';
 import 'links/grade_8/8c/civic_link_8c.dart';
 import 'links/grade_8/8c/english_link_8c.dart';
@@ -168,6 +187,7 @@ import 'links/grade_8/aesthetic_subjects/art_link_8.dart';
 import 'links/grade_8/aesthetic_subjects/dancing_link_8.dart';
 import 'links/grade_8/aesthetic_subjects/drama_link_8.dart';
 import 'links/grade_8/aesthetic_subjects/music_link_8.dart';
+import 'links/grade_9/9a/9a_login.dart';
 import 'links/grade_9/9a/buddhism_link_9a.dart';
 import 'links/grade_9/9a/civic_link_9a.dart';
 import 'links/grade_9/9a/english_link_9a.dart';
@@ -179,6 +199,7 @@ import 'links/grade_9/9a/pts_link_9a.dart';
 import 'links/grade_9/9a/science_link_9a.dart';
 import 'links/grade_9/9a/sinhala_link_9a.dart';
 import 'links/grade_9/9a/tamil_link_9a.dart';
+import 'links/grade_9/9b/9b_login.dart';
 import 'links/grade_9/9b/buddhism_link_9b.dart';
 import 'links/grade_9/9b/civic_link_9b.dart';
 import 'links/grade_9/9b/english_link_9b.dart';
@@ -190,6 +211,7 @@ import 'links/grade_9/9b/pts_link_9b.dart';
 import 'links/grade_9/9b/science_link_9b.dart';
 import 'links/grade_9/9b/sinhala_link_9b.dart';
 import 'links/grade_9/9b/tamil_link_9b.dart';
+import 'links/grade_9/9c/9c_login.dart';
 import 'links/grade_9/9c/buddhism_link_9c.dart';
 import 'links/grade_9/9c/civic_link_9c.dart';
 import 'links/grade_9/9c/english_link_9c.dart';
@@ -314,9 +336,12 @@ class MyApp extends StatelessWidget {
         'subjects/6/drama': (context) => DramaLink6(),
 
         // Navigate to 7 ABC
+        'subjects/7a/login': (context) => Grade7aLogin(),
         'subjects/7a': (context) => Grade7ASubjects(),
         'subjects/7b': (context) => Grade7BSubjects(),
+        'subjects/7b/login': (context) => Grade7bLogin(),
         'subjects/7c': (context) => Grade7CSubjects(),
+        'subjects/7c/login': (context) => Grade7cLogin(),
 
         // Grade 7A Subjects
         'subjects/7a/maths': (context) => MathsLink7a(),
@@ -366,8 +391,11 @@ class MyApp extends StatelessWidget {
 
         // Navigate to 8 ABC
         'subjects/8a': (context) => Grade8ASubjects(),
+        'subjects/8a/login': (context) => Grade8aLogin(),
         'subjects/8b': (context) => Grade8BSubjects(),
+        'subjects/8b/login': (context) => Grade8bLogin(),
         'subjects/8c': (context) => Grade8CSubjects(),
+        'subjects/8c/login': (context) => Grade8cLogin(),
 
         // Grade 8A Subjects
         'subjects/8a/maths': (context) => MathsLink8a(),
@@ -417,8 +445,11 @@ class MyApp extends StatelessWidget {
 
         // Navigate to 9 ABC
         'subjects/9a': (context) => Grade9ASubjects(),
+        'subjects/9a/login': (context) => Grade9aLogin(),
         'subjects/9b': (context) => Grade9BSubjects(),
+        'subjects/9b/login': (context) => Grade9bLogin(),
         'subjects/9c': (context) => Grade9CSubjects(),
+        'subjects/9c/login': (context) => Grade9cLogin(),
 
         // Grade 9A Subjects
         'subjects/9a/maths': (context) => MathsLink9a(),
@@ -468,8 +499,11 @@ class MyApp extends StatelessWidget {
 
         // Navigate to 10 ABC
         'subjects/10a': (context) => Grade10ASubjects(),
+        'subjects/10a/login': (context) => Grade10aLogin(),
         'subjects/10b': (context) => Grade10BSubjects(),
+        'subjects/10b/login': (context) => Grade10bLogin(),
         'subjects/10c': (context) => Grade10CSubjects(),
+        'subjects/10c/login': (context) => Grade10cLogin(),
 
         // Grade 10A Subjects
         'subjects/10a/maths': (context) => MathsLink10a(),
@@ -501,6 +535,20 @@ class MyApp extends StatelessWidget {
         'subjects/10/music': (context) => MusicLink10(),
         'subjects/10/dancing': (context) => DancingLink10(),
         'subjects/10/drama': (context) => DramaLink10(),
+
+        // Grade 10 Group I
+        'subjects/10/group1': (context) => Grade10GroupISubjects(),
+        'subjects/10/commerce': (context) => CommerceLink10(),
+        'subjects/10/geo': (context) => GeoLink10(),
+        'subjects/10/civic': (context) => CivicLink10(),
+        'subjects/10/tamil': (context) => TamilLink10(),
+
+        // Grade 10 Group II
+        'subjects/10/group2': (context) => Grade10GroupIISubjects(),
+        'subjects/10/ICT': (context) => ICTLink10(),
+        'subjects/10/health': (context) => HealthLink10(),
+        'subjects/10/hscience': (context) => HomeScienceLink10(),
+        'subjects/10/electronics': (context) => ElectronicsLink10(),
 
         // Navigate to 11 ABC
         'subjects/11a': (context) => Grade11ASubjects(),

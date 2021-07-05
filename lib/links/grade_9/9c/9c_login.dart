@@ -3,23 +3,24 @@ import 'package:flutter/material.dart';
 import 'package:flutter_school_project/grade_login.dart';
 import 'package:lottie/lottie.dart';
 
-class Grade6cLogin extends StatefulWidget {
-  const Grade6cLogin({Key? key}) : super(key: key);
+class Grade9cLogin extends StatefulWidget {
+  const Grade9cLogin({Key? key}) : super(key: key);
 
   @override
-  _Grade6cLoginState createState() => _Grade6cLoginState();
+  _Grade9cLoginState createState() => _Grade9cLoginState();
 }
 
-class _Grade6cLoginState extends State<Grade6cLogin> {
+class _Grade9cLoginState extends State<Grade9cLogin> {
   late String pass;
   bool isPasswordVisible = true;
   String password = "";
-  String className = '6c';
+  String className = '9c';
+
   String _class_teacher = "";
 
   void getLink() async {
     DocumentSnapshot variable = await FirebaseFirestore.instance
-        .collection('grade6c') // Change here..
+        .collection('grade9c') // Change here..
         .doc('login') // Change here..
         .get();
 

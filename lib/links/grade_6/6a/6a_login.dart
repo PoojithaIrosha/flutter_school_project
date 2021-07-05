@@ -15,6 +15,7 @@ class _Grade6aLoginState extends State<Grade6aLogin> {
   bool isPasswordVisible = true;
   String password = "";
   String className = '6a';
+  String _class_teacher = "";
 
   void getLink() async {
     DocumentSnapshot variable = await FirebaseFirestore.instance
@@ -25,6 +26,7 @@ class _Grade6aLoginState extends State<Grade6aLogin> {
     pass = variable['password'];
     setState(() {
       password = pass;
+      _class_teacher = variable['class_teacher'];
     });
   }
 
@@ -63,8 +65,8 @@ class _Grade6aLoginState extends State<Grade6aLogin> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child:
-            gradeLoginPage(password, this.context, buildPassword(), className),
+        child: gradeLoginPage(
+            password, this.context, buildPassword(), className, _class_teacher),
       ),
     );
   }
