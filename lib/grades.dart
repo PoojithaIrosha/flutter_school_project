@@ -16,6 +16,24 @@ class _GradesPageState extends State<GradesPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Select Your Grade"),
+          leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios_new),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
+          actions: [
+            Padding(
+              padding: const EdgeInsets.only(right: 10),
+              child: IconButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'timetable');
+                },
+                icon: Icon(Icons.calendar_today),
+                tooltip: "Time Table",
+              ),
+            )
+          ],
           // leading: Icon(Icons.arrow_back_ios_new),
         ),
         body: Center(
@@ -55,7 +73,8 @@ class _GradesPageState extends State<GradesPage> {
                               width: 200,
                               child: ElevatedButton(
                                   onPressed: () {
-                                    Navigator.pushNamed(context, 'subjects/6a');
+                                    Navigator.pushNamed(
+                                        context, 'subjects/6a/login');
                                   },
                                   child: Text("Grade 6-A",
                                       style: TextStyle(
@@ -69,7 +88,8 @@ class _GradesPageState extends State<GradesPage> {
                               width: 200,
                               child: ElevatedButton(
                                   onPressed: () {
-                                    Navigator.pushNamed(context, 'subjects/6b');
+                                    Navigator.pushNamed(
+                                        context, 'subjects/6b/login');
                                   },
                                   child: Text("Grade 6-B",
                                       style: TextStyle(
@@ -83,7 +103,8 @@ class _GradesPageState extends State<GradesPage> {
                               width: 200,
                               child: ElevatedButton(
                                   onPressed: () {
-                                    Navigator.pushNamed(context, 'subjects/6c');
+                                    Navigator.pushNamed(
+                                        context, 'subjects/6c/login');
                                   },
                                   child: Text("Grade 6-C",
                                       style: TextStyle(

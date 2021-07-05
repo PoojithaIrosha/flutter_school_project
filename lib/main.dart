@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_school_project/grades.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter_school_project/home.dart';
+import 'package:flutter_school_project/links/grade_6/6a/6a_login.dart';
 import 'package:flutter_school_project/links/grade_6/6a/buddhism_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/english_link_6a.dart';
 import 'package:flutter_school_project/links/grade_6/6a/maths_link_6a.dart';
@@ -13,6 +14,7 @@ import 'package:flutter_school_project/subjects/grade_11/aesthetic_subjects_grad
 import 'package:flutter_school_project/subjects/grade_11/subjects_11a.dart';
 import 'package:flutter_school_project/subjects/grade_11/subjects_11b.dart';
 import 'package:flutter_school_project/subjects/grade_11/subjects_11c.dart';
+import 'package:flutter_school_project/timetable.dart';
 import 'links/grade_10/10a/buddhism_link_10a.dart';
 import 'links/grade_10/10a/english_link_10a.dart';
 import 'links/grade_10/10a/history_link_10a.dart';
@@ -64,6 +66,7 @@ import 'links/grade_6/6a/history_link_6a.dart';
 import 'links/grade_6/6a/pts_link_6a.dart';
 import 'links/grade_6/6a/sinhala_link_6a.dart';
 import 'links/grade_6/6a/tamil_link_6a.dart';
+import 'links/grade_6/6b/6b_login.dart';
 import 'links/grade_6/6b/buddhism_link_6b.dart';
 import 'links/grade_6/6b/civic_link_6b.dart';
 import 'links/grade_6/6b/english_link_6b.dart';
@@ -75,6 +78,7 @@ import 'links/grade_6/6b/pts_link_6b.dart';
 import 'links/grade_6/6b/science_link_6b.dart';
 import 'links/grade_6/6b/sinhala_link_6b.dart';
 import 'links/grade_6/6b/tamil_link_6b.dart';
+import 'links/grade_6/6c/6c_login.dart';
 import 'links/grade_6/6c/buddhism_link_6c.dart';
 import 'links/grade_6/6c/civic_link_6c.dart';
 import 'links/grade_6/6c/english_link_6c.dart';
@@ -252,11 +256,16 @@ class MyApp extends StatelessWidget {
         'grades': (context) => GradesPage(),
         'login_page': (context) => TeacherPanelLogin(),
         'data_input_page': (context) => DataInputPage(),
+        'timetable': (context) => TimeTable(),
 
         // Navigate to 6 ABC
         'subjects/6a': (context) => Grade6ASubjects(),
+        'subjects/6a/login': (context) => Grade6aLogin(),
         'subjects/6b': (context) => Grade6BSubjects(),
+        'subjects/6b/login': (context) => Grade6bLogin(),
         'subjects/6c': (context) => Grade6CSubjects(),
+        'subjects/6c/login': (context) => Grade6cLogin(),
+        // 'subjects/6c/login': (context) => Grade6cLogin(),
 
         // Grade 6A Subjects
         'subjects/6a/maths': (context) => MathsLink6a(),

@@ -37,6 +37,7 @@ dependencies:
   firebase_core: any
   fluttertoast: any
   flutter_speed_dial: ^3.0.5
+  firebase_storage: any
 
 dev_dependencies:
   flutter_test:
