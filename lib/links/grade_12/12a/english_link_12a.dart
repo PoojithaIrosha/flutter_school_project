@@ -6,14 +6,14 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class EnglishLink11c extends StatefulWidget {
-  const EnglishLink11c({Key? key}) : super(key: key);
+class EnglishLink12a extends StatefulWidget {
+  const EnglishLink12a({Key? key}) : super(key: key);
 
   @override
-  _EnglishLink11cState createState() => _EnglishLink11cState();
+  _EnglishLink12aState createState() => _EnglishLink12aState();
 }
 
-class _EnglishLink11cState extends State<EnglishLink11c> {
+class _EnglishLink12aState extends State<EnglishLink12a> {
   late String link;
   late String id;
   late String pass;
@@ -24,7 +24,7 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
 
   void getLink() async {
     DocumentSnapshot variable = await FirebaseFirestore.instance
-        .collection('grade11c')
+        .collection('grade12a')
         .doc('english')
         .get();
     link = variable['link'];
@@ -44,8 +44,6 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
         finalLink = link;
       }
     });
-
-    print(link);
   }
 
   @override
@@ -68,7 +66,7 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
                   Padding(
                     padding: const EdgeInsets.only(top: 20),
                     child: Text(
-                      "Grade 11C - English", // Change Here..
+                      "Grade 12A - English", // Change Here..
                       style: TextStyle(
                           fontSize: 45,
                           fontWeight: FontWeight.w900,

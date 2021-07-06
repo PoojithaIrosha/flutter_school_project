@@ -516,7 +516,10 @@ class _GradesPageState extends State<GradesPage> {
                                 margin: EdgeInsets.all(5),
                                 width: 200,
                                 child: ElevatedButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(
+                                          context, 'subjects/12a/login');
+                                    },
                                     child: Text("Grade 12-A",
                                         style: TextStyle(
                                             fontSize: 25,
@@ -528,7 +531,10 @@ class _GradesPageState extends State<GradesPage> {
                                 margin: EdgeInsets.all(5),
                                 width: 200,
                                 child: ElevatedButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.pushNamed(
+                                        context, 'subjects/12b/login');
+                                  },
                                   child: Text("Grade 12-B",
                                       style: TextStyle(
                                           fontSize: 25,
@@ -541,7 +547,10 @@ class _GradesPageState extends State<GradesPage> {
                                 margin: EdgeInsets.all(5),
                                 width: 200,
                                 child: ElevatedButton(
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.pushNamed(
+                                          context, 'subjects/12c/login');
+                                    },
                                     child: Text("Grade 12-C",
                                         style: TextStyle(
                                             fontSize: 25,

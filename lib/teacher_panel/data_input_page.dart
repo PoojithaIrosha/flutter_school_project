@@ -13,7 +13,6 @@ class _DataInputPageState extends State<DataInputPage> {
   // Grades
   List<String> grades = [
     'Select the grade',
-    'grade5',
     'grade6',
     'grade7',
     'grade8',
@@ -21,7 +20,6 @@ class _DataInputPageState extends State<DataInputPage> {
     'grade10',
     'grade11',
     'grade12',
-    'grade13'
   ];
   String gradeSelected = "Select the grade";
 
@@ -228,10 +226,22 @@ class _DataInputPageState extends State<DataInputPage> {
                                   'health'
                                 ];
                               });
-                            } else if (gradeSelected == 'grade5') {
-                              subjects = ["Select the subject"];
                             } else if (gradeSelected == 'grade12') {
-                              subjects = ['Select the subject'];
+                              setState(() {
+                                subjects = [
+                                  'Select the subject',
+                                  'biology',
+                                  'english',
+                                  'ict',
+                                  'physics',
+                                  'accounts',
+                                  'commerce',
+                                  'economics',
+                                  'sinhala',
+                                  'dancing',
+                                  'music',
+                                ];
+                              });
                             }
                           },
                           child: Text(
@@ -265,8 +275,11 @@ class _DataInputPageState extends State<DataInputPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Center(
                       child: Text(
-                          "** For bucket subjects, only upload the link for class 'A' **",
-                          style: TextStyle(color: Colors.red)),
+                          "** For bucket subjects, only upload the link for class 'A' ** \n --> Not For Grade 12 <--",
+                          style: TextStyle(
+                              color: Colors.red,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w900)),
                     ),
                   ),
 

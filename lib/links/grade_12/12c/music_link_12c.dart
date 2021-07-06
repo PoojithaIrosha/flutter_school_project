@@ -6,14 +6,14 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class EnglishLink11c extends StatefulWidget {
-  const EnglishLink11c({Key? key}) : super(key: key);
+class MusicLink12c extends StatefulWidget {
+  const MusicLink12c({Key? key}) : super(key: key);
 
   @override
-  _EnglishLink11cState createState() => _EnglishLink11cState();
+  _MusicLink12cState createState() => _MusicLink12cState();
 }
 
-class _EnglishLink11cState extends State<EnglishLink11c> {
+class _MusicLink12cState extends State<MusicLink12c> {
   late String link;
   late String id;
   late String pass;
@@ -24,8 +24,8 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
 
   void getLink() async {
     DocumentSnapshot variable = await FirebaseFirestore.instance
-        .collection('grade11c')
-        .doc('english')
+        .collection('grade12c') // Change here..
+        .doc('music') // Change here..
         .get();
     link = variable['link'];
     id = variable['id'];
@@ -68,7 +68,7 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
                   Padding(
                     padding: const EdgeInsets.only(top: 20),
                     child: Text(
-                      "Grade 11C - English", // Change Here..
+                      "Grade 12C - Music", // Change Here..
                       style: TextStyle(
                           fontSize: 45,
                           fontWeight: FontWeight.w900,
@@ -100,7 +100,7 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
                   Padding(
                     padding: const EdgeInsets.only(top: 30, bottom: 30),
                     child: Text(
-                      "Meeting ID: $zoomId \n Passcode: $passcode", // Change Here
+                      "Meeting ID: $zoomId \n Passcode: $passcode",
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 18, fontFamily: 'Caveat'),
                     ),

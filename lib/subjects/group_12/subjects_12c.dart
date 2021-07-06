@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Grade11CSubjects extends StatelessWidget {
-  const Grade11CSubjects({Key? key}) : super(key: key);
+class Grade12CSubjects extends StatelessWidget {
+  const Grade12CSubjects({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +21,10 @@ class Grade11CSubjects extends StatelessWidget {
                       height: 70,
                       child: ElevatedButton(
                           onPressed: () {
-                            Navigator.pushNamed(context, 'subjects/11c/maths');
+                            Navigator.pushNamed(
+                                context, 'subjects/12c/sinhala');
                           },
-                          child: Text("Maths",
+                          child: Text("Sinhala",
                               style: TextStyle(
                                   fontSize: 25, fontWeight: FontWeight.bold)),
                           style: ElevatedButton.styleFrom(
@@ -33,10 +34,9 @@ class Grade11CSubjects extends StatelessWidget {
                       height: 70,
                       child: ElevatedButton(
                           onPressed: () {
-                            Navigator.pushNamed(
-                                context, 'subjects/11c/science');
+                            Navigator.pushNamed(context, 'subjects/12c/econ');
                           },
-                          child: Text("Science",
+                          child: Text("Economics",
                               style: TextStyle(
                                   fontSize: 25, fontWeight: FontWeight.bold)),
                           style: ElevatedButton.styleFrom(
@@ -47,9 +47,9 @@ class Grade11CSubjects extends StatelessWidget {
                       child: ElevatedButton(
                           onPressed: () {
                             Navigator.pushNamed(
-                                context, 'subjects/11c/sinhala');
+                                context, 'subjects/12c/dancing');
                           },
-                          child: Text("Sinhala",
+                          child: Text("Dancing",
                               style: TextStyle(
                                   fontSize: 25, fontWeight: FontWeight.bold)),
                           style: ElevatedButton.styleFrom(
@@ -59,10 +59,9 @@ class Grade11CSubjects extends StatelessWidget {
                       height: 70,
                       child: ElevatedButton(
                           onPressed: () {
-                            Navigator.pushNamed(
-                                context, 'subjects/11c/english');
+                            Navigator.pushNamed(context, 'subjects/12c/music');
                           },
-                          child: Text("English",
+                          child: Text("Music",
                               style: TextStyle(
                                   fontSize: 25, fontWeight: FontWeight.bold)),
                           style: ElevatedButton.styleFrom(
@@ -73,39 +72,13 @@ class Grade11CSubjects extends StatelessWidget {
                       child: ElevatedButton(
                           onPressed: () {
                             Navigator.pushNamed(
-                                context, 'subjects/11c/buddhism');
+                                context, 'subjects/12c/english');
                           },
-                          child: Text("Buddhism",
+                          child: Text("English",
                               style: TextStyle(
                                   fontSize: 25, fontWeight: FontWeight.bold)),
                           style: ElevatedButton.styleFrom(
-                              elevation: 5, primary: Colors.green))),
-                  Container(
-                      margin: EdgeInsets.all(10),
-                      height: 70,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.pushNamed(
-                                context, 'subjects/11c/history');
-                          },
-                          child: Text("History",
-                              style: TextStyle(
-                                  fontSize: 25, fontWeight: FontWeight.bold)),
-                          style: ElevatedButton.styleFrom(
-                              elevation: 5, primary: Colors.brown))),
-                  Container(
-                      margin: EdgeInsets.all(10),
-                      height: 70,
-                      child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.pushNamed(
-                                context, 'subjects/11/aesthetics');
-                          },
-                          child: Text("Aesthetics",
-                              style: TextStyle(
-                                  fontSize: 25, fontWeight: FontWeight.bold)),
-                          style: ElevatedButton.styleFrom(
-                              elevation: 5, primary: Colors.lime))),
+                              elevation: 5, primary: Colors.deepOrange))),
                 ],
               ),
             ),

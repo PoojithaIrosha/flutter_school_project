@@ -2,18 +2,18 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
-class EnglishLink11c extends StatefulWidget {
-  const EnglishLink11c({Key? key}) : super(key: key);
+class DancingLink12c extends StatefulWidget {
+  const DancingLink12c({Key? key}) : super(key: key);
 
   @override
-  _EnglishLink11cState createState() => _EnglishLink11cState();
+  DancingLink12cState createState() => DancingLink12cState();
 }
 
-class _EnglishLink11cState extends State<EnglishLink11c> {
+class DancingLink12cState extends State<DancingLink12c> {
   late String link;
   late String id;
   late String pass;
@@ -24,8 +24,8 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
 
   void getLink() async {
     DocumentSnapshot variable = await FirebaseFirestore.instance
-        .collection('grade11c')
-        .doc('english')
+        .collection('grade12c')
+        .doc('dancing')
         .get();
     link = variable['link'];
     id = variable['id'];
@@ -68,7 +68,7 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
                   Padding(
                     padding: const EdgeInsets.only(top: 20),
                     child: Text(
-                      "Grade 11C - English", // Change Here..
+                      "Grade 12C - Dancing", // Change Here..
                       style: TextStyle(
                           fontSize: 45,
                           fontWeight: FontWeight.w900,
@@ -151,7 +151,6 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
 
 @override
 Widget build(BuildContext context) {
-  // ignore: todo
   // TODO: implement build
   throw UnimplementedError();
 }

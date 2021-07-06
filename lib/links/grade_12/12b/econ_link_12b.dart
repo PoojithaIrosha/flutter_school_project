@@ -6,14 +6,14 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class EnglishLink11c extends StatefulWidget {
-  const EnglishLink11c({Key? key}) : super(key: key);
+class EconLink12b extends StatefulWidget {
+  const EconLink12b({Key? key}) : super(key: key);
 
   @override
-  _EnglishLink11cState createState() => _EnglishLink11cState();
+  EconLink12bState createState() => EconLink12bState();
 }
 
-class _EnglishLink11cState extends State<EnglishLink11c> {
+class EconLink12bState extends State<EconLink12b> {
   late String link;
   late String id;
   late String pass;
@@ -24,8 +24,8 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
 
   void getLink() async {
     DocumentSnapshot variable = await FirebaseFirestore.instance
-        .collection('grade11c')
-        .doc('english')
+        .collection('grade12b')
+        .doc('economics')
         .get();
     link = variable['link'];
     id = variable['id'];
@@ -68,7 +68,7 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
                   Padding(
                     padding: const EdgeInsets.only(top: 20),
                     child: Text(
-                      "Grade 11C - English", // Change Here..
+                      "Grade 12B - Economics", // Change Here..
                       style: TextStyle(
                           fontSize: 45,
                           fontWeight: FontWeight.w900,
@@ -151,7 +151,5 @@ class _EnglishLink11cState extends State<EnglishLink11c> {
 
 @override
 Widget build(BuildContext context) {
-  // ignore: todo
-  // TODO: implement build
   throw UnimplementedError();
 }

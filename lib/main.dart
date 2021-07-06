@@ -17,6 +17,9 @@ import 'package:flutter_school_project/subjects/grade_11/aesthetic_subjects_grad
 import 'package:flutter_school_project/subjects/grade_11/subjects_11a.dart';
 import 'package:flutter_school_project/subjects/grade_11/subjects_11b.dart';
 import 'package:flutter_school_project/subjects/grade_11/subjects_11c.dart';
+import 'package:flutter_school_project/subjects/group_12/subjects_12a.dart';
+import 'package:flutter_school_project/subjects/group_12/subjects_12b.dart';
+import 'package:flutter_school_project/subjects/group_12/subjects_12c.dart';
 import 'package:flutter_school_project/timetable.dart';
 import 'links/grade_10/10a/10a_login.dart';
 import 'links/grade_10/10a/buddhism_link_10a.dart';
@@ -83,6 +86,22 @@ import 'links/grade_11/groupII_subjects/electronics_link_11.dart';
 import 'links/grade_11/groupII_subjects/health_link_11.dart';
 import 'links/grade_11/groupII_subjects/hscience_link_11.dart';
 import 'links/grade_11/groupII_subjects/ict_link_11.dart';
+import 'links/grade_12/12a/12a_login.dart';
+import 'links/grade_12/12a/bio_link_12a.dart';
+import 'links/grade_12/12a/english_link_12a.dart';
+import 'links/grade_12/12a/ict_link_12a.dart';
+import 'links/grade_12/12a/physics_link_12a.dart';
+import 'links/grade_12/12b/12b_login.dart';
+import 'links/grade_12/12b/accounts_link_12b.dart';
+import 'links/grade_12/12b/commerce_link_12b.dart';
+import 'links/grade_12/12b/econ_link_12b.dart';
+import 'links/grade_12/12b/english_link_12b.dart';
+import 'links/grade_12/12c/12c_login.dart';
+import 'links/grade_12/12c/dancing_link_12c.dart';
+import 'links/grade_12/12c/econ_link_12c.dart';
+import 'links/grade_12/12c/english_link_12c.dart';
+import 'links/grade_12/12c/music_link_12c.dart';
+import 'links/grade_12/12c/sinhala_link_12.dart';
 import 'links/grade_6/6a/civic_link_6a.dart';
 import 'links/grade_6/6a/geo_link_6a.dart';
 import 'links/grade_6/6a/health_link_6a.dart';
@@ -615,6 +634,33 @@ class MyApp extends StatelessWidget {
         'subjects/11/health': (context) => HealthLink11(),
         'subjects/11/hscience': (context) => HomeScienceLink11(),
         'subjects/11/electronics': (context) => ElectronicsLink11(),
+
+        // Navigate to 12 ABC
+        'subjects/12a': (context) => Grade12ASubjects(),
+        'subjects/12a/login': (context) => Grade12aLogin(),
+        'subjects/12b': (context) => Grade12BSubjects(),
+        'subjects/12b/login': (context) => Grade12bLogin(),
+        'subjects/12c': (context) => Grade12CSubjects(),
+        'subjects/12c/login': (context) => Grade12cLogin(),
+
+        // Grade 12A Subjects
+        'subjects/12a/bio': (context) => BioLink12a(),
+        'subjects/12a/physics': (context) => PhysicsLink12a(),
+        'subjects/12a/ict': (context) => ICTLink12a(),
+        'subjects/12a/english': (context) => EnglishLink12a(),
+
+        // Grade 12B Subjects
+        'subjects/12b/accounts': (context) => AccountsLink12b(),
+        'subjects/12b/econ': (context) => EconLink12b(),
+        'subjects/12b/commerce': (context) => CommerceLink12b(),
+        'subjects/12b/english': (context) => EnglishLink12b(),
+
+        // Grade 12C Subjects
+        'subjects/12c/econ': (context) => EconLink12c(),
+        'subjects/12c/dancing': (context) => DancingLink12c(),
+        'subjects/12c/english': (context) => EnglishLink12c(),
+        'subjects/12c/sinhala': (context) => SinhalaLink12c(),
+        'subjects/12c/music': (context) => MusicLink12c(),
       },
     );
   }

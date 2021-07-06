@@ -51,33 +51,47 @@ class HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.all(10),
+                          padding: const EdgeInsets.only(top: 20, right: 10),
                           child: SizedBox(
                             height: 50,
-                            width: 100,
+                            width: 120,
                             child: ElevatedButton(
                                 onPressed: () {
                                   Navigator.pushNamed(context, 'login_page');
                                 },
                                 child: Text("Teacher",
                                     style: TextStyle(fontSize: 15)),
-                                style: ElevatedButton.styleFrom(
-                                    elevation: 5, primary: Colors.red)),
+                                style: ButtonStyle(
+                                    backgroundColor:
+                                        MaterialStateProperty.all(Colors.red),
+                                    shape: MaterialStateProperty.all<
+                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(50.0),
+                                            side: BorderSide(
+                                                color: Colors.red))))),
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.all(10),
+                          padding: const EdgeInsets.only(top: 20, left: 10),
                           child: SizedBox(
                             height: 50,
-                            width: 100,
+                            width: 120,
                             child: ElevatedButton(
                                 onPressed: () {
                                   Navigator.pushNamed(context, 'grades');
                                 },
                                 child: Text("Student",
                                     style: TextStyle(fontSize: 15)),
-                                style: ElevatedButton.styleFrom(
-                                    elevation: 5, primary: Colors.blue)),
+                                style: ButtonStyle(
+                                    shape: MaterialStateProperty.all<
+                                            RoundedRectangleBorder>(
+                                        RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(50.0),
+                                            side: BorderSide(
+                                                color: Colors.blue))))),
                           ),
                         ),
                       ],
