@@ -445,7 +445,7 @@ class _GradesPageState extends State<GradesPage> {
                                 child: ElevatedButton(
                                     onPressed: () {
                                       Navigator.pushNamed(
-                                          context, 'subjects/11a');
+                                          context, 'subjects/11a/login');
                                     },
                                     child: Text("Grade 11-A",
                                         style: TextStyle(
@@ -460,7 +460,7 @@ class _GradesPageState extends State<GradesPage> {
                                 child: ElevatedButton(
                                   onPressed: () {
                                     Navigator.pushNamed(
-                                        context, 'subjects/11b');
+                                        context, 'subjects/11b/login');
                                   },
                                   child: Text("Grade 11-B",
                                       style: TextStyle(
@@ -476,7 +476,7 @@ class _GradesPageState extends State<GradesPage> {
                                 child: ElevatedButton(
                                     onPressed: () {
                                       Navigator.pushNamed(
-                                          context, 'subjects/11c');
+                                          context, 'subjects/11c/login');
                                     },
                                     child: Text("Grade 11-C",
                                         style: TextStyle(

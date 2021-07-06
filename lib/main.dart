@@ -50,18 +50,21 @@ import 'links/grade_10/groupII_subjects/electronics_link_10.dart';
 import 'links/grade_10/groupII_subjects/health_link_10.dart';
 import 'links/grade_10/groupII_subjects/hscience_link_10.dart';
 import 'links/grade_10/groupII_subjects/ict_link_10.dart';
+import 'links/grade_11/11a/11a_login.dart';
 import 'links/grade_11/11a/buddhism_link_11a.dart';
 import 'links/grade_11/11a/english_link_11a.dart';
 import 'links/grade_11/11a/history_link_11a.dart';
 import 'links/grade_11/11a/maths_link_11a.dart';
 import 'links/grade_11/11a/science_link_11a.dart';
 import 'links/grade_11/11a/sinhala_link_11a.dart';
+import 'links/grade_11/11b/11b_login.dart';
 import 'links/grade_11/11b/buddhism_link_11b.dart';
 import 'links/grade_11/11b/english_link_11b.dart';
 import 'links/grade_11/11b/history_link_11b.dart';
 import 'links/grade_11/11b/maths_link_11b.dart';
 import 'links/grade_11/11b/science_link_11b.dart';
 import 'links/grade_11/11b/sinhala_link_11b.dart';
+import 'links/grade_11/11c/11c_login.dart';
 import 'links/grade_11/11c/buddhism_link_11c.dart';
 import 'links/grade_11/11c/english_link_11c.dart';
 import 'links/grade_11/11c/history_link_11c.dart';
@@ -72,6 +75,14 @@ import 'links/grade_11/aesthetic_subjects/art_link_11.dart';
 import 'links/grade_11/aesthetic_subjects/dancing_link_11.dart';
 import 'links/grade_11/aesthetic_subjects/drama_link_11.dart';
 import 'links/grade_11/aesthetic_subjects/music_link_11.dart';
+import 'links/grade_11/group1_subjects/civic_link_11.dart';
+import 'links/grade_11/group1_subjects/commerce_link_11.dart';
+import 'links/grade_11/group1_subjects/geo_link_11.dart';
+import 'links/grade_11/group1_subjects/tamil_link_11.dart';
+import 'links/grade_11/groupII_subjects/electronics_link_11.dart';
+import 'links/grade_11/groupII_subjects/health_link_11.dart';
+import 'links/grade_11/groupII_subjects/hscience_link_11.dart';
+import 'links/grade_11/groupII_subjects/ict_link_11.dart';
 import 'links/grade_6/6a/civic_link_6a.dart';
 import 'links/grade_6/6a/geo_link_6a.dart';
 import 'links/grade_6/6a/health_link_6a.dart';
@@ -230,6 +241,8 @@ import 'links/grade_9/aesthetic_subjects/music_link_9.dart';
 import 'subjects/grade_10/subjects_10a.dart';
 import 'subjects/grade_10/subjects_10b.dart';
 import 'subjects/grade_10/subjects_10c.dart';
+import 'subjects/grade_11/group1_subjects_grade11.dart';
+import 'subjects/grade_11/group2_subjects_grade11.dart';
 import 'subjects/grade_6/aesthetic_subjects_grade6.dart';
 import 'subjects/grade_6/subjects_6a.dart';
 import 'subjects/grade_6/subjects_6b.dart';
@@ -552,8 +565,11 @@ class MyApp extends StatelessWidget {
 
         // Navigate to 11 ABC
         'subjects/11a': (context) => Grade11ASubjects(),
+        'subjects/11a/login': (context) => Grade11aLogin(),
         'subjects/11b': (context) => Grade11BSubjects(),
+        'subjects/11b/login': (context) => Grade11bLogin(),
         'subjects/11c': (context) => Grade11CSubjects(),
+        'subjects/11c/login': (context) => Grade11cLogin(),
 
         // Grade 11A Subjects
         'subjects/11a/maths': (context) => MathsLink11a(),
@@ -585,6 +601,20 @@ class MyApp extends StatelessWidget {
         'subjects/11/music': (context) => MusicLink11(),
         'subjects/11/dancing': (context) => DancingLink11(),
         'subjects/11/drama': (context) => DramaLink11(),
+
+        // Grade 11 Group I
+        'subjects/11/group1': (context) => Grade11GroupISubjects(),
+        'subjects/11/commerce': (context) => CommerceLink11(),
+        'subjects/11/geo': (context) => GeoLink11(),
+        'subjects/11/civic': (context) => CivicLink11(),
+        'subjects/11/tamil': (context) => TamilLink11(),
+
+        // Grade 11 Group II
+        'subjects/11/group2': (context) => Grade11GroupIISubjects(),
+        'subjects/11/ICT': (context) => ICTLink11(),
+        'subjects/11/health': (context) => HealthLink11(),
+        'subjects/11/hscience': (context) => HomeScienceLink11(),
+        'subjects/11/electronics': (context) => ElectronicsLink11(),
       },
     );
   }
