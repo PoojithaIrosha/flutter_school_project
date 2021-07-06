@@ -46,7 +46,7 @@ dev_dependencies:
       ref: '0.9.1'
 
 flutter_icons:
-  image_path: 'icon/app_logo.png'
+  image_path: 'assets/ic_launcher.png'
   android: true
   ios: true
 

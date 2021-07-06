@@ -25,7 +25,6 @@ class _Grade6bLoginState extends State<Grade6bLogin> {
     pass = variable['password'];
     setState(() {
       password = pass;
-      late String _class_teacher;
       _class_teacher = variable['class_teacher'];
     });
   }
