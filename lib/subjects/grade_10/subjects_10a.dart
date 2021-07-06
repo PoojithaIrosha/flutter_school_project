@@ -117,6 +117,18 @@ class Grade10ASubjects extends StatelessWidget {
                                   fontSize: 25, fontWeight: FontWeight.bold)),
                           style: ElevatedButton.styleFrom(
                               elevation: 5, primary: Colors.deepOrange))),
+                  Container(
+                      margin: EdgeInsets.all(10),
+                      height: 70,
+                      child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'subjects/10/group2');
+                          },
+                          child: Text("Group III",
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold)),
+                          style: ElevatedButton.styleFrom(
+                              elevation: 5, primary: Colors.black54))),
                 ],
               ),
             ),

@@ -25,7 +25,7 @@ class _GeoLink11State extends State<GeoLink11> {
   void getLink() async {
     DocumentSnapshot variable = await FirebaseFirestore.instance
         .collection('grade11a') // Change here..
-        .doc('geo') // Change here..
+        .doc('geography') // Change here..
         .get();
     link = variable['link'];
     id = variable['id'];

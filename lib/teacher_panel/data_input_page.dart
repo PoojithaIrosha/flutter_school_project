@@ -217,7 +217,15 @@ class _DataInputPageState extends State<DataInputPage> {
                                   'art',
                                   'music',
                                   'drama',
-                                  'dancing'
+                                  'dancing',
+                                  'commerce',
+                                  'geography',
+                                  'civic',
+                                  'tamil',
+                                  'ict',
+                                  'homescience',
+                                  'electronics',
+                                  'health'
                                 ];
                               });
                             } else if (gradeSelected == 'grade5') {

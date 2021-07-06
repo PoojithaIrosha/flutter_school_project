@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_storage/firebase_storage.dart';
+import 'dart:io';
 
 class TimeTable extends StatefulWidget {
   const TimeTable({Key? key}) : super(key: key);
@@ -21,11 +22,33 @@ class _TimeTableState extends State<TimeTable> {
     });
   }
 
+  late bool isConnectedToInternet;
+  late String connectivity = "Please Wait";
+
+  void checkInternet() async {
+    try {
+      final result = await InternetAddress.lookup('example.com');
+      if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
+        isConnectedToInternet = true;
+      }
+    } on SocketException catch (_) {
+      isConnectedToInternet = false;
+    }
+
+    setState(() {
+      if (isConnectedToInternet == false) {
+        connectivity = "Please Check Your Internet Connection";
+      } else {
+        connectivity = "Please Wait...";
+      }
+    });
+  }
+
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     downloadImage();
+    checkInternet();
   }
 
   @override
@@ -43,7 +66,15 @@ class _TimeTableState extends State<TimeTable> {
               ),
             ),
             _downloadUrl == ""
-                ? Container(child: Text("Please Wait..."))
+                ? Container(
+                    child: Text(
+                    connectivity,
+                    style: TextStyle(
+                        color: Colors.red,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 20,
+                        fontFamily: 'Caveat'),
+                  ))
                 : Image.network(_downloadUrl),
           ],
         ),

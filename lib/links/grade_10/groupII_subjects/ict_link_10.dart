@@ -11,7 +11,7 @@ class ICTLink10 extends StatefulWidget {
 
   @override
   _ICTLink10 createState() => _ICTLink10();
-}
+} 
 
 class _ICTLink10 extends State<ICTLink10> {
   late String link;
