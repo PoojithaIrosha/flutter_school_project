@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_school_project/grade_login.dart';
-import 'package:lottie/lottie.dart';
 
 class Grade10aLogin extends StatefulWidget {
   const Grade10aLogin({Key? key}) : super(key: key);

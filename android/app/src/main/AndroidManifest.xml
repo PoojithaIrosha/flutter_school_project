@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_school_project">
    <application
-        android:label="WCC Class Manager"
+        android:label="Class Manager"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
