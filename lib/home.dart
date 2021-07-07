@@ -9,10 +9,77 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
+  Future<void> _showMyDialog() async {
+    return showDialog<void>(
+      context: context,
+      barrierDismissible: false, // user must tap button!
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('About'),
+          content: SingleChildScrollView(
+            child: ListBody(
+              children: const <Widget>[
+                Padding(
+                  padding: EdgeInsets.all(2.0),
+                  child: Text("A Class Manager App For WCC"),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(2.0),
+                  child: Text('Manage Your Classes!'),
+                ),
+                Divider(),
+                Padding(
+                  padding: EdgeInsets.all(5.0),
+                  child: Text("Developer: Poojitha Irosha"),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(5.0),
+                  child: Text("Email: poojithairosha9311@gmail.com"),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(5.0),
+                  child: Text("Contact: 0762873649"),
+                ),
+              ],
+            ),
+          ),
+          actions: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextButton(
+                child: const Text(
+                  'Close',
+                  style: TextStyle(color: Colors.red, fontSize: 20),
+                ),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
+      appBar: AppBar(
+        title: Text("Class Manager"),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 20),
+            child: IconButton(
+                onPressed: () {
+                  _showMyDialog();
+                },
+                icon: Icon(Icons.info),
+                iconSize: 27),
+          )
+        ],
+      ),
       body: SafeArea(
         child: Container(
             padding: EdgeInsets.only(top: 40),
