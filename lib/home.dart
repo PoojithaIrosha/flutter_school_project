@@ -21,7 +21,7 @@ class HomePageState extends State<HomePage> {
               children: const <Widget>[
                 Padding(
                   padding: EdgeInsets.all(2.0),
-                  child: Text("A Class Manager App For WCC"),
+                  child: Text("Every Child Deserves Access To Technology"),
                 ),
                 Padding(
                   padding: EdgeInsets.all(2.0),
