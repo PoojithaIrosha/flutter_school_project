@@ -12,7 +12,7 @@ class Grade6aLogin extends StatefulWidget {
 class _Grade6aLoginState extends State<Grade6aLogin> {
   late String pass;
   bool isPasswordVisible = true;
-  String password = "";
+  String password = "NoPassword";
   String className = '6a';
   String _class_teacher = "";
 

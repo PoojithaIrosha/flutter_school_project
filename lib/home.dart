@@ -67,11 +67,22 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        title: Text("Class Manager"),
+        title: Text(
+          "Class Manager",
+          style: TextStyle(
+              fontSize: 20,
+              color: Colors.black,
+              fontWeight: FontWeight.w900,
+              wordSpacing: 5,
+              letterSpacing: 3),
+        ),
+        backgroundColor: Colors.white10,
+        elevation: 0,
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 20),
+            padding: const EdgeInsets.only(right: 10),
             child: IconButton(
+                color: Colors.black,
                 onPressed: () {
                   _showMyDialog();
                 },

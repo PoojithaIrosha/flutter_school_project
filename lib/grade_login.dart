@@ -60,8 +60,9 @@ Widget gradeLoginPage(String password, context, Widget buildPassword,
                     Navigator.pushNamed(context, 'subjects/' + className);
                   } else {
                     Fluttertoast.showToast(
-                        msg: "Please Check Your Class Code",
+                        msg: "✖ Please Check Your Class Code ✖",
                         toastLength: Toast.LENGTH_SHORT,
+                        backgroundColor: Colors.red,
                         gravity: ToastGravity.BOTTOM);
                   }
                   passwordController.clear();

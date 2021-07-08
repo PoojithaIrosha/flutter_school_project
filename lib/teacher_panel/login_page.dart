@@ -15,7 +15,7 @@ class _TeacherPanelLoginState extends State<TeacherPanelLogin> {
   late String user;
 
   late String password;
-  late String username;
+  String username = '';
 
   void getLink() async {
     DocumentSnapshot variable = await FirebaseFirestore.instance
@@ -120,8 +120,9 @@ class _TeacherPanelLoginState extends State<TeacherPanelLogin> {
                       Navigator.pushNamed(context, 'data_input_page');
                     } else {
                       Fluttertoast.showToast(
-                          msg: "Please Check Your Email & Password",
+                          msg: "✖ Please Check Your Email & Password",
                           toastLength: Toast.LENGTH_SHORT,
+                          backgroundColor: Colors.redAccent,
                           gravity: ToastGravity.BOTTOM);
                     }
                     usernameController.clear();
